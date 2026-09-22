@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
+
+:root {
+  /* Overlay layers */
+  --z-overlay: 400;
+
+  --z-spotlight: 1000; /* Tutorial spotlights/guided help */
+
+  /* System layers */
+  --z-critical: 2000; /* Critical system notifications */
+
+  /* spacing */
+  --spacing-1: 0.25rem;
+  --spacing-2: 0.5rem;
+  --spacing-3: 0.75rem;
+  --spacing-4: 1rem;
+  --spacing-6: 1.5rem;
+  --spacing-8: 2rem;
+  --spacing-12: 3rem;
+  --spacing-16: 4rem;
+  --spacing-20: 5rem;
+}
+
+:root {
+  --background: hsl(40, 20%, 97%);
+  --foreground: hsl(220, 25%, 12%);
+
+  --surface: hsl(40, 25%, 94%);
+  --surface-foreground: hsl(220, 25%, 12%);
+
+  --sidebar: hsl(220, 20%, 15%);
+  --sidebar-foreground: hsl(40, 15%, 92%);
+
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(220, 25%, 12%);
+
+  --popup: hsl(0, 0%, 100%);
+  --popup-foreground: hsl(220, 25%, 12%);
+
+  --primary: hsl(217, 89%, 46%);
+  --primary-foreground: hsl(0, 0%, 100%);
+
+  --secondary: hsl(220, 14%, 90%);
+  --secondary-foreground: hsl(220, 25%, 16%);
+
+  --accent: hsl(217, 89%, 46%);
+  --accent-foreground: hsl(0, 0%, 100%);
+
+  --muted: hsl(40, 12%, 90%);
+  --muted-foreground: hsl(220, 10%, 42%);
+
+  --success: hsl(142, 60%, 32%);
+  --success-foreground: hsl(0, 0%, 100%);
+
+  --error: hsl(4, 74%, 46%);
+  --error-foreground: hsl(0, 0%, 100%);
+
+  --warning: hsl(38, 85%, 44%);
+  --warning-foreground: hsl(0, 0%, 100%);
+
+  --info: hsl(217, 89%, 46%);
+  --info-foreground: hsl(0, 0%, 100%);
+  --info-hover: hsl(217, 89%, 40%);
+  --info-active: hsl(217, 89%, 34%);
+
+  --border: hsl(220, 14%, 84%);
+
+  --font-family-base: 'Bricolage Grotesque', system-ui, sans-serif;
+  --font-family-display: 'Bricolage Grotesque', system-ui, sans-serif;
+  --font-family-monospace: 'IBM Plex Mono', ui-monospace, monospace;
+  --font-family-cursive: 'Bricolage Grotesque', system-ui, sans-serif;
+
+  --shadow: 0 1px 2px hsla(220, 25%, 12%, 0.06);
+  --shadow-md: 0 2px 8px hsla(220, 25%, 12%, 0.08);
+  --shadow-lg: 0 8px 24px hsla(220, 25%, 12%, 0.12);
+  --shadow-focus: 0 0 0 3px hsla(217, 89%, 46%, 0.25);
+
+  --radius-sm: 0.25rem;
+  --radius: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-full: 9999px;
+
+  --animation-duration-fast: 120ms;
+  --animation-duration-normal: 200ms;
+  --animation-duration-slow: 340ms;
+
+  --chart-color-1: hsl(217, 89%, 46%);
+  --chart-color-2: hsl(142, 60%, 32%);
+  --chart-color-3: hsl(38, 85%, 44%);
+  --chart-color-4: hsl(280, 55%, 52%);
+  --chart-color-5: hsl(4, 74%, 46%);
+}
+
+.dark {
+  --background: hsl(220, 22%, 9%);
+  --foreground: hsl(40, 15%, 92%);
+
+  --surface: hsl(220, 20%, 13%);
+  --surface-foreground: hsl(40, 15%, 92%);
+
+  --sidebar: hsl(220, 24%, 7%);
+  --sidebar-foreground: hsl(40, 15%, 92%);
+
+  --card: hsl(220, 20%, 14%);
+  --card-foreground: hsl(40, 15%, 92%);
+
+  --popup: hsl(220, 20%, 15%);
+  --popup-foreground: hsl(40, 15%, 92%);
+
+  --primary: hsl(213, 90%, 60%);
+  --primary-foreground: hsl(220, 25%, 10%);
+
+  --secondary: hsl(220, 16%, 20%);
+  --secondary-foreground: hsl(40, 15%, 92%);
+
+  --accent: hsl(213, 90%, 60%);
+  --accent-foreground: hsl(220, 25%, 10%);
+
+  --muted: hsl(220, 16%, 18%);
+  --muted-foreground: hsl(220, 10%, 65%);
+
+  --success: hsl(142, 55%, 48%);
+  --success-foreground: hsl(220, 25%, 10%);
+
+  --error: hsl(4, 80%, 62%);
+  --error-foreground: hsl(220, 25%, 10%);
+
+  --warning: hsl(38, 90%, 58%);
+  --warning-foreground: hsl(220, 25%, 10%);
+
+  --info: hsl(213, 90%, 60%);
+  --info-foreground: hsl(220, 25%, 10%);
+  --info-hover: hsl(213, 90%, 66%);
+  --info-active: hsl(213, 90%, 72%);
+
+  --border: hsl(220, 16%, 22%);
+
+  --shadow: 0 1px 2px hsla(0, 0%, 0%, 0.4);
+  --shadow-md: 0 2px 8px hsla(0, 0%, 0%, 0.45);
+  --shadow-lg: 0 8px 24px hsla(0, 0%, 0%, 0.5);
+  --shadow-focus: 0 0 0 3px hsla(213, 90%, 60%, 0.3);
+
+  --chart-color-1: hsl(213, 90%, 60%);
+  --chart-color-2: hsl(142, 55%, 48%);
+  --chart-color-3: hsl(38, 90%, 58%);
+  --chart-color-4: hsl(280, 60%, 68%);
+  --chart-color-5: hsl(4, 80%, 62%);
+}

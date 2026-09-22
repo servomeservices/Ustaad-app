@@ -1,0 +1,180 @@
+.page {
+  min-height: 100vh;
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-family-base);
+  padding: var(--spacing-4);
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: var(--spacing-2) var(--spacing-4);
+}
+
+.appName {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted-foreground);
+}
+
+.techName {
+  font-size: 1.25rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.headerRight {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-2);
+}
+
+.statusPill {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-2);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--foreground);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-full);
+  padding: var(--spacing-1) var(--spacing-3);
+}
+
+.statusDot {
+  width: 8px;
+  height: 8px;
+  border-radius: var(--radius-full);
+}
+
+.statusDotOnline {
+  background-color: var(--success);
+}
+
+.statusDotOffline {
+  background-color: var(--muted-foreground);
+}
+
+.statsRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-3);
+  margin-bottom: var(--spacing-4);
+}
+
+.statCard {
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: var(--spacing-4);
+}
+
+.statLabel {
+  font-size: 0.75rem;
+  color: var(--muted-foreground);
+  font-weight: 600;
+}
+
+.statValue {
+  margin-top: var(--spacing-1);
+  font-size: 1.5rem;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+}
+
+.tabs {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
+}
+
+.tabContent {
+  outline: none;
+}
+
+.cardList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
+}
+
+.card {
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: var(--spacing-4);
+}
+
+.cardTop {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: var(--spacing-2);
+}
+
+.service {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.customer {
+  font-size: 0.875rem;
+  color: var(--muted-foreground);
+  margin-top: 2px;
+}
+
+.metaRow {
+  display: flex;
+  justify-content: space-between;
+  padding-block: var(--spacing-1);
+  border-top: 1px solid var(--border);
+  font-size: 0.8125rem;
+}
+
+.metaRow:first-of-type {
+  border-top: none;
+}
+
+.metaLabel {
+  color: var(--muted-foreground);
+}
+
+.metaValue {
+  font-weight: 600;
+  text-align: right;
+}
+
+.metaValueNum {
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+}
+
+.cardAction {
+  width: 100%;
+  margin-top: var(--spacing-3);
+}
+
+.emptyState {
+  text-align: center;
+  color: var(--muted-foreground);
+  font-size: 0.875rem;
+  padding: var(--spacing-8) 0;
+}
+
+.actionError {
+  background-color: color-mix(in srgb, var(--error) 12%, var(--surface));
+  border: 1px solid color-mix(in srgb, var(--error) 35%, var(--border));
+  color: var(--error);
+  border-radius: var(--radius);
+  padding: var(--spacing-3);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  margin-bottom: var(--spacing-3);
+}

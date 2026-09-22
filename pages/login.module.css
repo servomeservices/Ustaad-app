@@ -1,0 +1,79 @@
+.page {
+  min-height: 100vh;
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-family-base);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-4);
+}
+
+.card {
+  width: 100%;
+  max-width: 360px;
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: var(--spacing-8) var(--spacing-6);
+  display: flex;
+  flex-direction: column;
+}
+
+.appName {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted-foreground);
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-top: var(--spacing-1);
+  margin-bottom: var(--spacing-6);
+}
+
+.label {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--muted-foreground);
+  margin-bottom: var(--spacing-2);
+}
+
+.phoneRow {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-2);
+}
+
+.prefix {
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.input {
+  flex: 1;
+  font-variant-numeric: tabular-nums;
+}
+
+.devHint {
+  margin-top: var(--spacing-3);
+  font-size: 0.8125rem;
+  color: var(--warning);
+  background-color: color-mix(in srgb, var(--warning) 12%, transparent);
+  border-radius: var(--radius-sm);
+  padding: var(--spacing-2) var(--spacing-3);
+}
+
+.error {
+  margin-top: var(--spacing-3);
+  font-size: 0.8125rem;
+  color: var(--error);
+}
+
+.action {
+  margin-top: var(--spacing-4);
+  width: 100%;
+}
