@@ -54,3 +54,15 @@ product. Bookings created via its `webhooks/n8n-booking_POST` endpoint write
 to *this app's own Postgres database* — a different database from the
 MongoDB one the Python backend and Expo app use. The two are not currently
 wired together.
+
+### `pages/register-shop.tsx` is NOT the real QR-stand flow
+
+This page is a Floot-side prototype and is **not used in production**. The
+real QR-stand registration flow already exists, live, on the Python backend
+at `servome-backend-2`'s `/dispatcher` route (staff OTP login, in-browser
+jsQR camera scan, claim form with geotagged photo — see
+`static/dispatcher.html` in that pod, not this repo). That route is meant to
+sit behind a subdomain on Servome's own domain (e.g.
+`dispatcher.servomeservice.com`), attached via the InstaPods dashboard.
+`pages/register-shop.tsx` here should be treated as dead weight from an
+earlier Floot iteration, not a second implementation to maintain.
